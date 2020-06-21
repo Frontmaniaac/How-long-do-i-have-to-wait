@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>How long do i have to wait</title>
+</head>
+<body>
+    <div class="counter-app">
+        <div class="settings active">
+            <h1>Settings</h1>
+            <label for="event-name">Event name:</label>
+            <input type="text" id="event-name" value='New year'>
+            <table class="date">
+                <tr>
+                    <td><label for="event-day">Day:</label></td>
+                    <td><label for="event-month">Month</label></td>
+                    <td><label for="event-year">Year</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="event-day" maxlength="2" value="1"></td>
+                    <td><input type="number" id="event-month" maxlength="2" value="1"></td>
+                    <td><input type="number" id="event-year" maxlength="4" value="2021"></td>
+                </tr>
+            </table>
+            <label for="event-image">Link to picture:</label>
+            <input type="text" id="event-image" value="https://cdn.pixabay.com/photo/2020/01/30/21/24/neon-4806610__340.jpg">
+
+            <button class="save">Save</button>
+
+        </div>
+
+
+        <div class="app-body">
+            <div class="image-section">
+                <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+            </div>
+            <div class="time-section">
+                <h3><span class="event">New year</span> in:</h3>
+                <div class="time-cards">
+                    <div class="card">
+                        <p class="days-count number">1</p>
+                        <p class="card-title">Days</p>
+                    </div>
+                    <div class="card">
+                        <p class="hours-count number">23</p>
+                        <p class="card-title">Hours</p>
+                    </div>
+                    <div class="card">
+                        <p class="minutes-count number">48</p>
+                        <p class="card-title">Minutes</p>
+                    </div>
+                    <div class="card">
+                        <p class="seconds-count number">35</p>
+                        <p class="card-title">Seconds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="code.js"></script>
+</body>
+</html>
